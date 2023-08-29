@@ -4,9 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Laboratorio 2</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Hoja de vida</h1>
+
+    <div class = "header">
+        <h1>Sistema online de Empleos</h1><br>
+        
+    </div>
     <form action="" method="post">
         <!-- Datos personales -->
         <fieldset name="Datos personales">
@@ -72,7 +77,7 @@
             
             <label for="celular">Celular</label>
             <input type="tel" id="celular" name="celular" pattern="[0-9]{8}"><br>
-            <small>Formato: 60197034</small><br><br>
+            <small>Formato: 60197034</small><br>
             <p>
                 <label for="email">Email</label>
                 <input type="email" id="email">
@@ -82,6 +87,94 @@
                 <input type="text" id="direccion">
             </p>
         </fieldset>
+        <br>
+
+        <!-- Experiencias laborales -->
+        <fieldset>
+            <legend>Experiencias laborales</legend>
+            <label for="experiencias">Escriba la experiencia laboral que ha tenido</label><br>
+            <textarea name="experiencias" cols="100" rows="5">
+            </textarea>
+      
+        </fieldset>
+        <br>
+
+        <!-- Educacion -->
+        <fieldset>
+            <legend>Educación</legend>
+            <label for="niveleducativo">Seleccione el nivel de educación</label><br>
+            <select>
+                <option disabled selected="">Seleccione</option>
+                    <option>Primaria</option>
+                    <option>Secundaria</option>
+                    <option>Universidad</option>
+            </select>
+      
+        </fieldset>
+        <br>
+
+        <!-- Idiomas -->
+        <fieldset>
+            <legend>Idiomas</legend>
+            Seleccione los idiomas que habla
+            <div>
+              <input type="checkbox" id="ingles" name="ingles" />
+              <label for="ingles">Inglés</label>
+            </div>
+          
+            <div>
+              <input type="checkbox" id="frances" name="frances" />
+              <label for="frances">Francés</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="aleman" name="aleman" />
+                <label for="aleman">Alemán</label>
+              </div>
+          </fieldset>
+          <br>
+
+          <!-- Lenguajes de programación -->
+        <fieldset>
+            <legend>Informática</legend>
+            Seleccione los lenguajes de programación que maneje
+            <div>
+              <input type="checkbox" id="java" name="java" />
+              <label for="java">Java</label>
+            </div>
+          
+            <div>
+              <input type="checkbox" id="php" name="php" />
+              <label for="php">PHP</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="javascript" name="javascript" />
+                <label for="javascript">JavaScript</label>
+              </div>
+          </fieldset>
+          <br>
+
+          <!-- Referencias -->
+
+          <fieldset>
+            <legend>Referencias</legend>
+            <label for="referencias">Escriba las referencias personales</label><br>
+            <textarea name="referencias" cols="100" rows="5"></textarea>
+          </fieldset>
+
+          <!-- Subir archivos -->
+          <fieldset>
+            <legend>Cargar una Hoja de vida</legend>
+            <label for="hojavida">Cargue su curriculum</label><br>
+            <input type="file" name="hojavida" id="hojavida">
+          </fieldset>
+          <br>
+          
+
+          <div style="margin-top: 5px;">
+            <input type="submit">
+            </div>
     </form>
     
 </body>

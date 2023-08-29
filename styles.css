@@ -1,0 +1,87 @@
+body {
+    justify-content: center;
+    align-items: center;
+    background: rgb(255, 249, 254);
+    background: linear-gradient(
+      90deg,
+      rgba(255, 249, 254, 1) 0%,
+      rgba(169, 144, 210, 1) 81%
+    );
+  }
+  *, *::before, *::after {
+      box-sizing: border-box;
+    }
+    
+    
+    .header { 
+      position: relative; 
+      height: 25vh;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-image: url('background.jpeg');
+      background-size: cover;
+      
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        background-color: rgba(0,0,0,0.25);
+        background-color: rgba(192, 163, 212, 0.643);
+      }
+    }
+    
+    h1 {
+      position: relative;
+      color: #ffffff;  
+      font-size: 5rem;
+      line-height: 0.9;
+      text-align: center;
+    }
+    
+    
+    
+    
+  
+  
+  
+  form {
+      align-items: stretch;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 40px 50px;
+    border: 3px solid rgb(213, 213, 213);
+    padding: 30px;
+    background-color: rgb(208, 205, 248);
+  }
+  
+  fieldset {
+    background-color: #c4b2e3;
+    padding: 16px;
+  }
+  
+  legend {
+    background-color: rgb(212, 192, 245);
+    border-radius: 10px;
+    font-weight: 900;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 10px;
+    padding-left: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+  }
+  
+  label {
+    display: inline-block;
+    width: 120px;
+  }
+  
+  div {
+    margin-bottom: 10px;
+  }
